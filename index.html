@@ -4,6 +4,12 @@
         <meta charset="utf-8"/>
         <title>すまん</title>
         <link rel="stylesheet" href="dokaben.css">
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <script>
+   function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
+        </script>
     </head>
     <body>
         <p class="dokaben dkbn-loop dkbn-text" style="animation-duration: 1000ms; font-size: 2em;">タイムライン荒らしてすまん</p>
@@ -17,6 +23,9 @@
         <p class="dokaben dkbn-loop dkbn-text" style="animation-duration: 1000ms; font-size: 2em;">タイムライン荒らしてすまん</p><dr>
         <iframe width="1035" height="582" src="https://www.youtube.com/embed/nupd8xXyBcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><dr>
         <iframe width="640" height="480" src="https://www.youtube.com/embed/0b75cl4-qRE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
+        <button class="g-recaptcha" 
+        data-sitekey="reCAPTCHA_site_key" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
     </body>
     </html>
